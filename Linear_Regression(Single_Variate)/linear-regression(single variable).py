@@ -8,7 +8,6 @@ from sklearn import linear_model
 df =pd.read_csv("homeprices.csv")
 df
 # %%
-% matplotlib inline
 plt.xlabel('area')
 plt.ylabel('price')
 plt.scatter(df.area,df.price,color='black',marker='*')
@@ -66,4 +65,27 @@ plt.ylabel('per capita income')
 plt.scatter(c.year,c['per_capita_income'],color='green')
 plt.plot(c.year,reg.predict(c[['year']]),color='blue')
 plt.show()
+# %%
+import pickle
+# %%
+with open('model_pickle','wb') as f:
+    pickle.dump(reg,f)
+
+
+# %%
+with open('model_pickle','rb') as f:
+    reg = pickle.load(f)
+
+# %%
+reg.predict([[2029]])
+# %%
+import joblib
+# %%
+joblib.dump(reg,'reg_joblib')
+# %%
+job = joblib.load('reg_joblib')
+# %%
+job.predict([[2029]])
+# %%
+job.coef_
 # %%
