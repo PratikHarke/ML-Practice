@@ -2,14 +2,16 @@
 
 A collection of Machine Learning implementations using Python and scikit-learn, built as part of hands-on learning.
 
-## 📂 Repository Structure
+## 📁 Repository Structure
 
 ```
 ML-Practice/
-├── Linear_Regression(Single_Variate)/   # Simple linear regression with one feature
-├── Linear_Regression(Multi_Variate)/    # Multiple feature linear regression
-├── Linear_regression(Boston_Dataset)/   # Regression on the classic Boston housing dataset
-└── Ridge_and_Lasso/                     # Regularized regression with hyperparameter tuning
+├── Linear_Regression(Single_Variate)/       # Simple linear regression with one feature
+├── Linear_Regression(Multi_Variate)/        # Multiple feature linear regression
+├── Linear_regression(Boston_Dataset)/       # Regression on the classic Boston housing dataset
+├── Ridge_and_Lasso/                         # Regularized regression with hyperparameter tuning
+├── Logistic_regression/                     # Classification using logistic regression
+└── Decision_Tree/                           # Decision Tree with Pre-Pruning and Post-Pruning
 ```
 
 ## 🧠 Topics Covered
@@ -21,6 +23,8 @@ ML-Practice/
 | Boston Dataset | End-to-end regression on a real-world dataset |
 | Ridge Regression | L2 regularization with GridSearchCV tuning |
 | Lasso Regression | L1 regularization with feature selection |
+| Logistic Regression | Classification using logistic regression on the Iris dataset |
+| Decision Tree | Classification tree with pre-pruning and post-pruning to control overfitting |
 
 ## 🛠️ Tech Stack
 
@@ -32,7 +36,7 @@ ML-Practice/
 
 ## 🚀 Getting Started
 
-```bash
+```
 git clone https://github.com/PratikHarke/ML-Practice.git
 cd ML-Practice
 pip install scikit-learn pandas numpy seaborn matplotlib
@@ -42,4 +46,4 @@ Then open any `.py` file in VS Code and run cells interactively.
 
 ## 👤 Author
 
-**Pratik Harke** — Independent security researcher & CS undergrad exploring ML on the side.
+Pratik Harke — Independent security researcher & CS undergrad exploring ML on the side.
