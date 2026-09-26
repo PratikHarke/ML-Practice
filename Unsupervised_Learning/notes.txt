@@ -1,0 +1,77 @@
+CLUSTERING 
+    1] K-means Clustering
+    2] DBSCAN 
+    3] Hierarchical Clustering
+
+K-means Clustering - 
+    Steps - 
+    1] Initialize K centroids 
+    2] Group points based on minimum distance from centroid.
+    3] Move centroids by calculating mean.
+    4] Repeat until clusters are formed.
+
+Usually elbow method is used to calculate the value of K.
+Manhattan Distance or Euclidean Distance is used to calculate distance between centroid and data point.
+
+
+Random Initialization Trap - 
+    Consists of K++ technique.
+
+
+Hierarchical clustering - 
+    1] Agglomerative
+    2] Divisive 
+
+Agglomerative - 
+    Steps - 
+    1] For each point consider it has as a independent cluster.
+    2] Find nearest point and create a new cluster.
+    3] Repeat step 2 until we get a single cluster. 
+
+Divisive - 
+    Steps - 
+    1] Start with all points as a single cluster.
+    2] Divide it based on distance.
+    3] Continue until all points are separate.
+
+
+DBSCAN Clustering - 
+    Consists of - 
+    1] Border point.
+    2] Core Point.
+    3] Noise/Outlier.
+    4] Minpts.
+    5] Epsilon = radius of circle.
+    Minpts and Epsilon are hyperparameters in this case.
+
+    1] Core point - 
+        If no. of points(including core point) within epsilon are >=minpts, then it is called as core point.
+
+    2] Border Points - 
+        No. of data points within radius is less than minpts(including core point).
+
+    3] Outliers - 
+        DBSCAN is robust to outliers.
+
+Silhouette Clustering - 
+    Technique used to validate proper clustering of data points. 
+
+
+Anomaly Detection - 
+    To detect outliers.
+
+Isolation Forest - 
+    Gives Isolated Leaf Nodes.
+
+Anomaly score  - 
+    S(x,m) = 2 ^ [-E(h(x))] / c(m)
+    where, 
+    m = No of data points
+    x = Data Point
+    E(h(x)) = Average Search Depth for x from Isolated Tree. 
+    c(m) = Average depth of all data points.
+
+    E(h(x)) << c(m) = S(x,m) ~~ 1 =>Anomaly Score of Outlier.
+
+    E(h(x)) >> c(m) =S(x,m) ~~ 0.5 => Anomaly score of normal data point.
+    

@@ -1,0 +1,31 @@
+ADABOOST
+
+    -It is a boosting technique.
+    -Decision Tree with a depth of 1 is called as Stump.
+    -We create stumps and select the best one.
+    -Calculate sum of Total Errors and Performance of stump.
+    -Update the weights.
+    -Normalized weights computation and assigning bias.
+    -Select data points for next stump.
+    -Final Prediction.
+    
+    Performance of stump - 1/n ln[1-TE/TE]
+
+    For Updated Weights - 
+    1] For correctly classified points
+        = weight * e ^ -Performance of Stump
+
+    2] For incorrectly classified points - 
+        = weight * e ^ performance of stump
+    
+
+GRADIENT BOOSTING ALGORITHM
+    
+    Steps - 
+    1] Create a Base Model.
+
+    2] Compute Residuals and Errors.
+
+    3] Construct a Decision Tree - Consider inputs xi and output R1.
+
+    
